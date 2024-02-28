@@ -22,7 +22,7 @@
         <!--Style definitions are at the bottom of Resources/Styles.xaml-->
         <!--Styles reference: https://learn.microsoft.com/en-us/dotnet/maui/user-interface/styles/xaml?view=net-maui-8.0-->
         <!--Since the program is a single page, App.xaml.cs has MainPage = new MainPage(); instead of MainPage = new AppShell(); to eliminate the header.-->
-        <Entry x:Name="mainEntry" Grid.Column="0" Grid.ColumnSpan="4" IsEnabled="False" FontSize="50" HorizontalTextAlignment="End" Text="0" TextColor="White"></Entry>
+        <Entry x:Name="mainEntry" Grid.Column="0" Grid.ColumnSpan="4" IsEnabled="False" FontSize="40" HorizontalTextAlignment="End" VerticalTextAlignment="Center" Text="0" TextColor="White"></Entry>
         <Button Grid.Row="1" Grid.Column="0" Style="{StaticResource calculatorButtonLight}" Text="AC" Clicked="Clear_Button_Clicked"></Button>
         <Button Grid.Row="1" Grid.Column="1" Style="{StaticResource calculatorButtonLight}" Text="+/-" Clicked="Negative_Button_Clicked"></Button>
         <Button Grid.Row="1" Grid.Column="2" Style="{StaticResource calculatorButtonLight}" Text="%" Clicked="Percent_Button_Clicked"></Button>

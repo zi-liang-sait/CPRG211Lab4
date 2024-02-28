@@ -40,14 +40,15 @@ namespace CPRG211Lab4
             }
             switch (Operation)
             {
+                //Format numbers to 10 digits: https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings
                 case "+":
-                    return (Number1 + Number2).ToString();
+                    return $"{Number1 + Number2:G10}";
                 case "-":
-                    return (Number1 - Number2).ToString();
+                    return $"{Number1 - Number2:G10}";
                 case "×":
-                    return (Number1 * Number2).ToString();
+                    return $"{Number1 * Number2:G10}";
                 case "÷":
-                    return (Number1 / Number2).ToString();
+                    return $"{Number1 / Number2:G10}";
                 default:
                     return "Invalid Operaiton.";
             }
